@@ -3,9 +3,7 @@
 {% block head %}
   {{ super() }}
 
-  <!-- include jquery.js -->
-  {% include 'jquery.html' %}
-
+  {{ jquery.load_js(page) }}
   <script>
     $(document).ready(function(){
       $("button").click(function(){
